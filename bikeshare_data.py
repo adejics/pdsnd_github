@@ -168,6 +168,7 @@ def user_stats(df):
     try:    #this will prevent exceptions error where some city has no gender data
         gender = dict(df.groupby(["Gender"])["Gender"].count())
         print("The gender statistics are stated below: \n")
+        print("The data below shows the available gender and the number of times they occur\n")
         for user_gender in gender.keys():
             print("{} occured {} times. \n".format(user_gender, gender[user_gender]))
     except: # this will ensure the code doesnt break if no gender column exists
@@ -186,6 +187,7 @@ def user_stats(df):
         print("The most common year of birth for the selected filter is {}".format(most_common_year))
     except:# this prevents the code from breaking in the absence of data on year of birth
         print("We are sorry, there is no information on birth year for the city you selected \n")
+        print("Other available information wil be displayed below.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
