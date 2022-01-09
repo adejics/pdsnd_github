@@ -10,7 +10,8 @@ computing descriptive statistics. I also wrote a script that takes in raw input
 to create an interactive experience in the terminal to present these statistics.
 
 ### Date Created
-This project was created on the 9th day of January 2022.
+This project was created on the 9th day of January 2022. The bikeshare python code was
+completed on January 7, 2022.
 
 ### Project Title
 **Explore Bikeshare Data**
