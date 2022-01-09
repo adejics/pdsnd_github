@@ -186,6 +186,7 @@ def user_stats(df):
         print("The most common year of birth for the selected filter is {}".format(most_common_year))
     except:# this prevents the code from breaking in the absence of data on year of birth
         print("We are sorry, there is no information on birth year for the city you selected \n")
+        print("Other available information wil be displayed below.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
