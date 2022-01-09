@@ -168,6 +168,7 @@ def user_stats(df):
     try:    #this will prevent exceptions error where some city has no gender data
         gender = dict(df.groupby(["Gender"])["Gender"].count())
         print("The gender statistics are stated below: \n")
+        print("The data below shows the available gender and the number of times they occur\n")
         for user_gender in gender.keys():
             print("{} occured {} times. \n".format(user_gender, gender[user_gender]))
     except: # this will ensure the code doesnt break if no gender column exists
